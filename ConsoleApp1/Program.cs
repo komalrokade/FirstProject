@@ -6,6 +6,7 @@ namespace ConsoleApp1
     {
         /// <summary>
         /// Enter Point Method
+        /// All methods of the programm class will be static
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -21,9 +22,10 @@ namespace ConsoleApp1
             z = x + y;
             //"z" is a string
             //+ is the operatoe which is overloade for string Concatination
-            Console.WriteLine("The value of z is" +z);
+            Console.WriteLine("The value of z is " + z);
             //inpur statement, waits for the input from the console
             Console.ReadLine();
-        }
+            Console.WriteLine("Program run succeess");
+        }       
     }
 }
