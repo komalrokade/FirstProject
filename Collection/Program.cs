@@ -47,6 +47,7 @@ namespace Collection
                     if((int)i%2==0)
                     {
                         Console.WriteLine("Even numbers are "+(int)i);
+                        Console.WriteLine();
                         count++;
                         Console.WriteLine();
                     }
