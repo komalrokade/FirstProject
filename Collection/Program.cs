@@ -36,7 +36,7 @@ namespace Collection
             //arrcollection.Add('E');
 
             Console.WriteLine($"Length of Array colleciton is {arrcollection.Count}");
-            Console.WriteLine();
+            Console.WriteLine("hhhhh");
             int sum = 0;
             int count = 0;
             foreach(object i in arrcollection)
