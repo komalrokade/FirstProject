@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PracticeQuestions
 {
-    public abstract class Program1
+     public class Program1
     {
 
         //Que. 5
@@ -17,8 +17,7 @@ namespace PracticeQuestions
         //{
         //    return ++Count;
         //}
-
-
+        
         //Que. 6
         //static Program1()
         //{
@@ -26,6 +25,12 @@ namespace PracticeQuestions
         //}
 
         //Que. 7
+        //static void Test()
+        //{
+
+        //    Console.WriteLine("This is static method");
+        //}
+
+
     }
-        
 }

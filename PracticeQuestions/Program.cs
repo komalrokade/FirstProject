@@ -2,13 +2,14 @@
 
 namespace PracticeQuestions
 {
-    public class Program 
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
             //Qustion no. 2
-            //private static abstract void Display();
+            //public abstract void Display();
             //o/p = virtual and abstract method cannot be private
 
 
@@ -35,10 +36,50 @@ namespace PracticeQuestions
             //o/p = yes we can have static constructor in public class
 
             //Qustion no. 7
+            //Program obj = new Program1();
+            //obj.Test();
+            //Program1.Test();
+            //Program.Test();
+            //Yes abstract class can have static methods
+
+
+            //Que no 9
+            //public int _Month = 1;
+            //public int Month
+            //{
+            //    get => _Month;
+            //    set
+            //    {
+            //        if ((value > 0) && (value < 13))
+            //        {
+            //            _Month = value;
+            //            Console.WriteLine(value);
+            //        }
+            //    }
+            //}
+            //no, in abstract class we cannot add properties
+
+            //Qustion no. 10
+            //public abstract void Display();
+            //o/p = progrm.diplay()is an abstract method but it is contained non-abstract Class program
+            //so we cannot add avstract method in non abstract class
+
+            //Qustion no. 11
+            //public abstract void Display();
+            //Virutal or abstract emmbers cannot be private
+
+            //Qustion no. 12
+            //yes
+
+
+            //Qustion no. 14
+            //yes derived class can be sealed but bae class cannot be sealed
             
 
-        }
+            //Question no. 15
+            //we can have sealed methods 
 
+        }
     }
 }
 
