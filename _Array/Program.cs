@@ -8,59 +8,60 @@ namespace _Array
         {
             //RECTANGULAR ARRAY//
             Console.WriteLine("Rectangualar array for numbers");
-            string display = string.Empty;
+            string d = string.Empty;
             int[,] intArray =
             {
-                {1, 2 },
-                {3, 4 },
-                {5, 6 }
+                {11, 22 },
+                {33, 44 },
+                {55, 66 }
             };
             for(int row=0; row<intArray.GetLength(0);row++)
             {
                 for( int column = 0; column<intArray.GetLength(1);column++)
                 {
-                    display += intArray[row, column] + "";
+                    d += intArray[row, column] + "";
                 }
-                display += '\n';
+                d += '\n';
             }
-            Console.WriteLine(display);
+            Console.WriteLine(d);
 
             Console.WriteLine("Rectangualar array for characters");
 
-            string disp = string.Empty;
+            string a = string.Empty;
             string[,] strArray =
             {
-                {"Apple" },
-                {"banana" },
-                {"mango" }
+                {"RED" },
+                {"BLACK" },
+                {"ORANGE" }
             };
             for (int row = 0; row < strArray.GetLength(0); row++)
             {
                 for (int column = 0; column < strArray.GetLength(1); column++)
                 {
-                    disp += strArray[row, column] + " ";
+                    a += strArray[row, column] + " ";
                 }
-                disp += '\n';
+                a += '\n';
             }
-            Console.WriteLine(disp);
+            Console.WriteLine(a);
 
             //MULTI-DIMENSIONAL ARRAY//
 
-            int[,] numbers = { { 2, 3 }, { 4, 5 } };
-            Console.WriteLine("Elements at index [0,0] :" +numbers[0,0]);
-            Console.WriteLine("Elements at index [1,0] :" + numbers[1, 0]);
+            int[,] v = { { 100,200 }, { 300,400} };
+            Console.WriteLine("Elements at index [0,0] :" + v[1,0]);
+            Console.WriteLine("Elements at index [1,0] :" + v[1, 1]);
+            Console.WriteLine("Elements at index [1,0] :" + v[0, 0]);
 
-            numbers[0, 0] = 222;
-            Console.WriteLine("New Elements at index [0,0] :" + numbers[0, 0]);
+            v[0, 0] = 222;
+            Console.WriteLine("New Elements at index [0,0] :" + v[0, 0]);
 
             //USING LOOPS//
-            int[,] num = { { 2, 3, 6 }, { 4, 5, 8 } };
-            for(int i=0; i<num.GetLength(0);i++)
+            int[,] b = { { 2, 3, 6 }, { 4, 5, 8 } };
+            for(int i=0; i< b.GetLength(0);i++)
             {
                 Console.WriteLine("Row "+i+": ");
-                for(int j=0;j<num.GetLength(1);j++)
+                for(int j=0;j< b.GetLength(1);j++)
                 {
-                    Console.WriteLine(num[i, j] + ":");
+                    Console.WriteLine(b[i, j] + ":");
                 }
                 Console.WriteLine();
             }
